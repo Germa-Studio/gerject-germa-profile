@@ -18,7 +18,7 @@ jobs:
         script: | 
           cd /var/www/germa/ci-cd-test-laravel
           git pull origin master
-          yarn update 
+          yarn install 
           npm run lint -- --fix
           npm run build 
           npm run start
