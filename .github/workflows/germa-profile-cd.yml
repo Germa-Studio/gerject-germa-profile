@@ -16,7 +16,9 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script_stop: true
         script: | 
-          cd /var/www/germa/ci-cd-test-laravel
+          cd /var/www/germa/gerject-germa-profile
           git pull origin master
           yarn install
-          npm run dev
+          npm run lint -- --fix
+          npm run build
+          npm run start
