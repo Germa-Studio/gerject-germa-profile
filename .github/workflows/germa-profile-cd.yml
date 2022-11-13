@@ -16,7 +16,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script_stop: true
         script: | 
-          cd ./var/www/germa/ci-cd-test-laravel
+          cd /var/www/germa/ci-cd-test-laravel
           git pull origin master
           yarn update 
           npm run lint -- --fix
