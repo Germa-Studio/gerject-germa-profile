@@ -1,0 +1,24 @@
+name: Germa Profile CD
+on:
+  push: 
+    branches: [ master ]
+jobs: 
+  build: 
+    name: Build
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Executing remote command
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        port: ${{ secrets.SSH_PORT }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script_stop: true
+        script: | 
+          cd ./var/www/germa/ci-cd-test-laravel
+          git pull origin master
+          yarn update 
+          npm run lint -- --fix
+          npm run build 
+          npm run start
