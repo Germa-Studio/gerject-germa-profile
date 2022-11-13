@@ -21,4 +21,4 @@ jobs:
           yarn install
           npm run lint -- --fix
           npm run build
-          npm run start
+          pm2 start npm --name "germa-profile-app" -- start
