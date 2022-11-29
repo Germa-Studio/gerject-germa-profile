@@ -23,7 +23,7 @@ export default function Home() {
                             width={531}
                             height={161}
                             alt="manajemen"
-                            className="absolute right-1/4 bottom-72 -z-10"
+                            className="absolute right-1/4 bottom-80 -z-10"
                         />
                         <a href="#section-why">
                             <button className="btn btn-primary mt-16">
