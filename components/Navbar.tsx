@@ -1,17 +1,26 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Navbar() {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 fixed top-0 z-50">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl">GermaStd.</a>
+                <Link
+                    className="btn btn-ghost normal-case text-xl h-auto"
+                    href={"/"}>
+                    <Image
+                        src="/assets/logo.svg"
+                        width={60}
+                        height={60}
+                        alt="logo"
+                    />
+                </Link>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal p-0">
-                    <li>
-                        <a>Item 1</a>
-                    </li>
                     <li tabIndex={0}>
                         <a>
-                            Parent
+                            Tech Stacks
                             <svg
                                 className="fill-current"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +40,10 @@ export default function Navbar() {
                         </ul>
                     </li>
                     <li>
-                        <a>Item 3</a>
+                        <a>Harga</a>
+                    </li>
+                    <li>
+                        <a>Tentang Kami</a>
                     </li>
                 </ul>
             </div>

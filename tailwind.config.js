@@ -9,20 +9,20 @@ module.exports = {
         extend: {},
     },
     plugins: [require("daisyui")],
-    // daisyui: {
-    //     themes: [
-    //         {
-    //             fikriTheme: {
-    //                 // eslint-disable-next-line @typescript-eslint/no-var-requires
-    //                 ...require("daisyui/src/colors/themes")[
-    //                     "[data-theme=corporate]"
-    //                 ],
-    //                 "base-100": "#FBFEFE",
-    //                 secondary: "#11469B",
-    //                 accent: "#22EF9D",
-    //             },
-    //         },
-    //         "night",
-    //     ],
-    // },
+    daisyui: {
+        themes: [
+            {
+                myTheme: {
+                    // eslint-disable-next-line @typescript-eslint/no-var-requires
+                    ...require("daisyui/src/colors/themes")[
+                        "[data-theme=lofi]"
+                    ],
+                    primary: "#33373E",
+                    secondary: "#CFD4DA",
+                    accent: "#F1F5FA",
+                },
+            },
+            "night",
+        ],
+    },
 };
