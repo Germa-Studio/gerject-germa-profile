@@ -43,7 +43,7 @@ export default function Navbar() {
                         <a>Harga</a>
                     </li>
                     <li>
-                        <a>Tentang Kami</a>
+                        <Link href={"/about"}>Tentang Kami</Link>
                     </li>
                 </ul>
             </div>

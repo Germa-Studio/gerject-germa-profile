@@ -18,8 +18,8 @@
 
 ## Features
 
-[ ] Homepage
-[ ] About
-[ ] Pricing
+[ ] Homepage 50%
+[ ] About 50%
+[ ] Pricing 0%
 
 Web test: http://103.161.185.125:3000/

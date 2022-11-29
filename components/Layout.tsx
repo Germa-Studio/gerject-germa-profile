@@ -12,7 +12,7 @@ export default function Layout({ children }: LayoutProps) {
             <Head>
                 <title>Germa Studio</title>
                 <meta name="description" content="Germa Studio" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/assets/logo-white.svg" />
             </Head>
             <Navbar />
             <main>{children}</main>

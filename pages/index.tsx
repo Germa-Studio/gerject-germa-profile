@@ -4,7 +4,7 @@ import Section from "../components/Section";
 export default function Home() {
     return (
         <>
-            <div className="hero min-h-screen bg-base-200 overflow-hidden">
+            <div className="hero min-h-screen overflow-hidden">
                 <div className="hero-content text-center overflow-hidden">
                     <div className="max-w-lg">
                         <Image
@@ -44,10 +44,10 @@ export default function Home() {
                 <div className="h-full mt-32">
                     <h1
                         id="why-title"
-                        className="text-primary-content text-center gloria text-2xl">
+                        className="text-primary-content text-center gloria text-3xl">
                         3 Poin penting yang harus Kamu tahu !
                     </h1>
-                    <div className="mt-20 w-1/2 mx-auto">
+                    <div className="mt-20 w-full lg:w-1/2 px-5 mx-auto">
                         <div
                             tabIndex={0}
                             className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box my-3">
@@ -76,7 +76,7 @@ export default function Home() {
                                     sistem.{" "}
                                     <span className="gloria">
                                         Jadi, Kamu bisa fokus ngembangin produk
-                                        Kamu :)
+                                        Kamu :&#41;
                                     </span>
                                 </p>
                             </div>
