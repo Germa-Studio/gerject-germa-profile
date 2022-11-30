@@ -15,14 +15,14 @@ module.exports = {
                 myTheme: {
                     // eslint-disable-next-line @typescript-eslint/no-var-requires
                     ...require("daisyui/src/colors/themes")[
-                        "[data-theme=lofi]"
+                        "[data-theme=light]"
                     ],
                     primary: "#33373E",
                     secondary: "#CFD4DA",
                     accent: "#F1F5FA",
                 },
             },
-            "night",
+            // "dark",
         ],
     },
 };

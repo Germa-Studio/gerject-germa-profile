@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
     return (
@@ -43,7 +44,13 @@ export default function Navbar() {
                         <a>Harga</a>
                     </li>
                     <li>
-                        <Link href={"/about"}>Tentang Kami</Link>
+                        <Link
+                            href={"/about"}
+                            className={
+                                useRouter().pathname == "/about" ? "active" : ""
+                            }>
+                            Tentang Kami
+                        </Link>
                     </li>
                 </ul>
             </div>
