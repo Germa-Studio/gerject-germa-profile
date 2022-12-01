@@ -4,7 +4,7 @@ import Section from "../components/Section";
 export default function Home() {
     return (
         <>
-            <div className="hero min-h-screen overflow-hidden">
+            <div className="hero min-h-screen overflow-hidden bg-base-100">
                 <div className="hero-content text-center overflow-hidden">
                     <div className="max-w-lg">
                         <Image
@@ -13,7 +13,7 @@ export default function Home() {
                             height={153}
                             alt="hero logo"
                         />
-                        <p className="py-6 w-full">
+                        <p className="py-6 w-full text-base-content">
                             &#34;Kamu merasa hidupmu berat? Kamu perlu tahu
                             bahwa pekerjaan akan terasa sangat ringan apabila{" "}
                             <del>tidak kamu kerjakan</del> .&#34;
@@ -40,14 +40,14 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <Section id="section-why" className={"bg-primary pt-16"}>
+            <Section id="section-why" className={"bg-primary py-16 min-h-max"}>
                 <div className="h-full mt-32">
                     <h1
                         id="why-title"
                         className="text-primary-content text-center gloria text-3xl">
                         3 Poin penting yang harus Kamu tahu !
                     </h1>
-                    <div className="mt-20 w-full lg:w-1/2 px-5 mx-auto">
+                    <div className="mt-20 w-full lg:w-1/2 px-5 mx-auto text-base-content">
                         <div
                             tabIndex={0}
                             className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box my-3">
@@ -92,7 +92,6 @@ export default function Home() {
                                     <li>- Pengerjaan Cepat</li>
                                     <li>- Harga Terjangkau</li>
                                     <li>- Menggunakan teknologi ter-update</li>
-                                    <li>- Dapat mengkustom pemesanan</li>
                                     <li>
                                         - Gratis maintenance sampai 3 bulan dan
                                         revisi 3 kali setelah aplikasi dideploy
@@ -103,7 +102,7 @@ export default function Home() {
                     </div>
                 </div>
             </Section>
-            <Section className="pt-0">
+            <Section className="bg-base-100 pt-0 text-base-content">
                 <Image
                     src="/assets/wave2.svg"
                     width={1920}

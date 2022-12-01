@@ -5,7 +5,7 @@ import Section from "../components/Section";
 export default function About() {
     return (
         <>
-            <Section className={"pt-16"}>
+            <Section className={"bg-base-100 pt-16 text-base-content"}>
                 <div className="m-10">
                     <h1 className="text-3xl">
                         Germa{" "}

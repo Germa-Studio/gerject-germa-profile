@@ -22,7 +22,6 @@ module.exports = {
                     accent: "#F1F5FA",
                 },
             },
-            // "dark",
         ],
     },
 };
